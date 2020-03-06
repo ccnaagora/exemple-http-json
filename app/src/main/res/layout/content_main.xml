@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        android:text="Entrer l'URL"
+        android:text="Entrer l'URL:"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,9 +41,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/bordure_toggle"
         android:text="ToggleButton"
-        android:textOff="GET"
-        android:textOn="POST"
+        android:textOff="METHODE GET (cliquer pour changer)"
+        android:textOn="METHODE POST (cliquer pour changer)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edpass" />
@@ -53,23 +54,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/bordure_bouton"
         android:text="GO"
+        android:textColor="@color/design_default_color_surface"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvurl" />
+        app:layout_constraintTop_toBottomOf="@+id/get_post" />
 
     <TextView
         android:id="@+id/tvjson"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/bordure"
-        android:padding="2dp"
-        android:text="TextView"
+        android:padding="4dp"
+        android:text="réponse JSON"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,8 +108,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="password"
+        android:layout_marginTop="20dp"
+        android:text="password:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ednom" />
 
@@ -126,16 +129,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ednom" />
 
     <TextView
-        android:id="@+id/tvurl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="url complète"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/get_post" />
-
-    <TextView
         android:id="@+id/tvjsonobjet"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -143,8 +136,8 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/bordure"
-        android:padding="2dp"
-        android:text="TextView"
+        android:padding="4dp"
+        android:text="JSON décodé"
         android:textColor="@color/design_default_color_primary_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

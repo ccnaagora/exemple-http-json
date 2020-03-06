@@ -45,7 +45,7 @@ A titre d'exemple, le script coté serveur est fourni ci dessous: tstJson.php
 public class MainActivity extends AppCompatActivity {
 
     //déclaration des widgets pour le traitement des parametres et résultats (json brut et objets
-    TextView tvjson, tvJsonDecode , tvurl;
+    TextView tvjson, tvJsonDecode ;
     EditText ednom , edpass, edurl;
     ToggleButton tgb;
     Button bgo;
@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         //instancition des widgets
         tvjson = findViewById(R.id.tvjson);
         tvJsonDecode = findViewById(R.id.tvjsonobjet);
-        tvurl = findViewById(R.id.tvurl);
         ednom = findViewById(R.id.ednom);
         edpass = findViewById(R.id.edpass);
         edurl = findViewById(R.id.edurl);
